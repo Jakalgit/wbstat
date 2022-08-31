@@ -1,0 +1,150 @@
+body {
+    min-width: 320px;
+    font-family: 'Jost', sans-serif;
+    font-weight: normal;
+    overflow-y: hidden;
+    margin: 0;
+}
+.menu {
+    display: none;
+    overflow-y: auto;
+    min-height: 100vh;
+    width: 14rem;
+    background-color: #006064;
+}
+.menu_item {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    transition: all 0.2s;
+}
+.menu_item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.work {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    display: flex;
+    justify-content: center;
+}
+.current_item {
+    font-size: 1.5rem;
+}
+.text {
+    width: 15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.param {
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.table {
+    height: 60vh;
+    overflow-y: auto;
+}
+.table_line {
+    margin-top: 0.3rem;
+    transition: all 0.2s;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.table_line:hover {
+    cursor: pointer;
+    background-color: #D9D9D9;
+}
+.table_param {
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+}
+.price_line {
+    margin-top: 2rem;
+    text-align: center;
+}
+.price {
+    font-size: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: inline-block;
+}
+@media (max-width: 1740px) {
+    .text {
+        width: 12rem;
+    }
+    .param {
+        font-size: 1rem;
+    }
+    .table_param {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 1340px) {
+    .text {
+        width: 10rem;
+    }
+}
+@media (max-width: 1150px) {
+    .text {
+        width: 6rem;
+    }
+    .current_item {
+        font-size: 1.2rem;
+    }
+    .param {
+        font-size: 0.65rem;
+    }
+    .table_param {
+        font-size: 0.55rem;
+    }
+}
+@media (max-width: 630px) {
+    .text {
+        width: 4rem;
+    }
+    .param {
+        font-size: 0.5rem;
+    }
+    .current_item {
+        font-size: 0.8rem;
+    }
+    .table_param {
+        font-size: 0.4rem;
+    }
+    .table_line {
+        height: 2rem;
+    }
+    .price {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 490px) {
+    .text {
+        width: 3rem;
+    }
+    .param {
+        font-size: 0.4rem;
+    }
+    .current_item {
+        font-size: 0.5rem;
+    }
+    .table_param {
+        font-size: 0.35rem;
+    }
+    .table_line {
+        height: 1.5rem;
+    }
+}
