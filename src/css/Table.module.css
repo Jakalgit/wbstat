@@ -102,13 +102,13 @@ body {
         width: 6rem;
     }
     .current_item {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .param {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
     .table_param {
-        font-size: 0.55rem;
+        font-size: 0.7rem;
     }
 }
 @media (max-width: 630px) {
