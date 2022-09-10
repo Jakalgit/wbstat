@@ -29,13 +29,13 @@ const Table = () => {
                         let object = statList[statList.indexOf(statList.find(el => el.barcode === order.barcode))]
                         object.sent++
                         object.price = order.totalPrice / 100
-                        object.allPrice += order.totalPrice / 100
-                        all += order.totalPrice / 100
+                        object.allPrice += (order.totalPrice / 100) * 0.88
+                        all += (order.totalPrice / 100) * 0.88
 
                         if (order.userStatus === 2 || order.userStatus === 0) {
                             object.sales++
-                            object.priceSales += order.totalPrice / 100
-                            price += order.totalPrice / 100
+                            object.priceSales += (order.totalPrice / 100) * 0.88
+                            price += (order.totalPrice / 100) * 0.88
                         } else if (order.userStatus === 3) {
                             object.denial++
                         }
